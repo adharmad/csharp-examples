@@ -26,7 +26,10 @@ namespace csharp_examples
             //TryFile1.ReadFile();
             //TryFile2.WriteFile();
             //TryConvert.Convert();
-            TryGC.GarbageCollect();
+            //TryGC.GarbageCollect();
+            //TryBinaryFormatter.Serialize();
+            //TryDate.PrintDate();
+            new TryType1().GetMyType();
         }
     }
 }
