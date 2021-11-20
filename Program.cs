@@ -25,7 +25,8 @@ namespace csharp_examples
             //TryList1.TestList();
             //TryFile1.ReadFile();
             //TryFile2.WriteFile();
-            TryConvert.Convert();
+            //TryConvert.Convert();
+            TryGC.GarbageCollect();
         }
     }
 }
