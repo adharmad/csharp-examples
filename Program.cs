@@ -6,7 +6,8 @@ namespace csharp_examples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //ConnectToDatabase.Connect();
+            ExecuteSelectQuery.ExecuteQuery();
         }
     }
 }
