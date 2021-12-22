@@ -7,7 +7,12 @@ namespace csharp_examples
         static void Main(string[] args)
         {
             //ConnectToDatabase.Connect();
-            ExecuteSelectQuery.ExecuteQuery();
+            //ExecuteSelectQuery.ExecuteQuery();
+            //ThreadPool1.RunMain();
+            //ThreadPool2.RunThreads();
+            //ScheduleWork.ScheduleIt();
+            //ScheduleWorkCallFunction.ScheduleFunction();
+            TaskScheduler1.Schedule();
         }
     }
 }
