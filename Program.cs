@@ -17,7 +17,8 @@ namespace csharp_examples
             //ConcQueue2.TryConcQueue2();
             //new ProdCons(2).ProdAndCons();
             //new ProdConsWithThreads(4).ProdAndConsViaThreads();
-            new ProdConsWithThreadPool(5).ProdAndConsViaThreads();
+            //new ProdConsWithThreadPool(5).ProdAndConsViaThreads();
+            new ProdConsConcQueue().ProdAndConsUsingConcQueue();
         }
     }
 }
