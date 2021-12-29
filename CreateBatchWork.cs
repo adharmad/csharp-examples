@@ -34,9 +34,9 @@ namespace csharp_examples
 
         public CreateBatchWork()
         {
-            ProcessNumber = 100;
+            ProcessNumber = 10; // For PAC
             NumBatchEntries = 10000;
-            JobName = "PAC";
+            JobName = "DemoPACJob";
             CoderId = "APD1";
             StatusCode = -1;
             CompanyCode = "01";
@@ -67,12 +67,13 @@ namespace csharp_examples
                     connection.Open();
                     Console.WriteLine("Connection successful!");
 
-
+                    DateTime now = DateTime.Now;
+                    
                     for (int i = 0; i < NumBatchEntries; i++)
                     {
                         int batchNumber = i + 1;
                         string policyNumber = PolicyNumberPrefix + i;
-                        string additionalParms = CompanyCode + " " + policyNumber + " " + DateTime.Now.ToString();
+                        string additionalParms = CompanyCode + " " + policyNumber + " " + now.ToString();
 
                         SqlCommand batchCommand = new SqlCommand(BATCH_NUMBERS_INSERT_QUERY, connection);
                         batchCommand.Parameters.Add("@processnumber", System.Data.SqlDbType.SmallInt).Value = ProcessNumber;
@@ -97,8 +98,8 @@ namespace csharp_examples
                         workStatusCommand.Parameters.Add("@statusmessage", System.Data.SqlDbType.VarChar).Value = StatusMessage;
                         workStatusCommand.Parameters.Add("@companycode", System.Data.SqlDbType.Char).Value = CompanyCode;
                         workStatusCommand.Parameters.Add("@policynumber", System.Data.SqlDbType.NChar).Value = policyNumber;
-                        workStatusCommand.Parameters.Add("@datesubmitted", System.Data.SqlDbType.DateTime).Value = DateTime.Now;
-                        workStatusCommand.Parameters.Add("@dateprocessed", System.Data.SqlDbType.DateTime).Value = DateTime.Now;
+                        workStatusCommand.Parameters.Add("@datesubmitted", System.Data.SqlDbType.DateTime).Value = now;
+                        workStatusCommand.Parameters.Add("@dateprocessed", System.Data.SqlDbType.DateTime).Value = now;
                         workStatusCommand.Parameters.Add("@additionalparms", System.Data.SqlDbType.VarChar).Value = additionalParms;
 
                         Console.WriteLine("Adding workStatus for " + batchNumber);
