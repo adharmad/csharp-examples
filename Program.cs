@@ -20,7 +20,11 @@ namespace csharp_examples
             //new ProdConsWithThreadPool(5).ProdAndConsViaThreads();
             //new ProdConsConcQueue().ProdAndConsUsingConcQueue();
             //new CreateBatchWork().CreateWork();
-            TryNewGuid.NewGuids();
+            //TryNewGuid.NewGuids();
+            //TryTypeOf.RunTryTypeOf();
+            //TryList1.TestList();
+            //TryFile1.ReadFile();
+            TryFile2.WriteFile();
         }
     }
 }
