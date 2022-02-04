@@ -24,7 +24,8 @@ namespace csharp_examples
             //TryTypeOf.RunTryTypeOf();
             //TryList1.TestList();
             //TryFile1.ReadFile();
-            TryFile2.WriteFile();
+            //TryFile2.WriteFile();
+            TryConvert.Convert();
         }
     }
 }
