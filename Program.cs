@@ -29,7 +29,9 @@ namespace csharp_examples
             //TryGC.GarbageCollect();
             //TryBinaryFormatter.Serialize();
             //TryDate.PrintDate();
-            new TryType1().GetMyType();
+            //new TryType1().GetMyType();
+            //ReflectionTest.ReflectMultipleTimes();
+            StringInterpTest.DoStringInterp();
         }
     }
 }
