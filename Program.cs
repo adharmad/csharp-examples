@@ -28,10 +28,11 @@ namespace csharp_examples
             //TryConvert.Convert();
             //TryGC.GarbageCollect();
             //TryBinaryFormatter.Serialize();
-            //TryDate.PrintDate();
+            //TryDate1.PrintDate();
+            TryDate2.GetDate();
             //new TryType1().GetMyType();
             //ReflectionTest.ReflectMultipleTimes();
-            StringInterpTest.DoStringInterp();
+            //StringInterpTest.DoStringInterp();
         }
     }
 }

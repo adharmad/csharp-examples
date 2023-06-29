@@ -2,7 +2,7 @@ using System;
 
 namespace csharp_examples
 {
-    class TryDate
+    class TryDate1
     {
         public static void PrintDate()
         {
