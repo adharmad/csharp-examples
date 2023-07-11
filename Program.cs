@@ -1,4 +1,5 @@
 ﻿using System;
+using other_namespace;
 
 namespace csharp_examples
 {
@@ -29,10 +30,11 @@ namespace csharp_examples
             //TryGC.GarbageCollect();
             //TryBinaryFormatter.Serialize();
             //TryDate1.PrintDate();
-            TryDate2.GetDate();
+            //TryDate2.GetDate();
             //new TryType1().GetMyType();
             //ReflectionTest.ReflectMultipleTimes();
             //StringInterpTest.DoStringInterp();
+            TryStaticImport.CallStaticMethod();
         }
     }
 }
