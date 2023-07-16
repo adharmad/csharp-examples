@@ -35,7 +35,8 @@ namespace csharp_examples
             //ReflectionTest.ReflectMultipleTimes();
             //StringInterpTest.DoStringInterp();
             //TryStaticImport.CallStaticMethod();
-            TryGenericsClass1.TestGenericsClassMethod();
+            //TryGenericsClass1.TestGenericsClassMethod();
+            TryDict1.Dict1();
         }
     }
 }
