@@ -29,7 +29,7 @@ namespace csharp_examples
             //TryConvert.Convert();
             //TryGC.GarbageCollect();
             //TryBinaryFormatter.Serialize();
-            TryDate1.PrintDate();
+            //TryDate1.PrintDate();
             //TryDate2.GetDate();
             //new TryType1().GetMyType();
             //ReflectionTest.ReflectMultipleTimes();
@@ -37,6 +37,7 @@ namespace csharp_examples
             //TryStaticImport.CallStaticMethod();
             //TryGenericsClass1.TestGenericsClassMethod();
             //TryDict1.Dict1();
+            TryFuncParam1.FuncParam();
         }
     }
 }
