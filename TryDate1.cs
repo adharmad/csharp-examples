@@ -8,6 +8,9 @@ namespace csharp_examples
         {
             Console.WriteLine(DateTime.Now.ToString());
             Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd 'T'HH:mm:ss"));
+            string dateStr = DateTime.Now.ToString("yyyyMMddHHmmssffzzz");
+            dateStr = dateStr.Replace(":", "");
+            Console.WriteLine(dateStr);
         }
     }
 }

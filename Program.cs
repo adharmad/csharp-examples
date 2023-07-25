@@ -29,14 +29,14 @@ namespace csharp_examples
             //TryConvert.Convert();
             //TryGC.GarbageCollect();
             //TryBinaryFormatter.Serialize();
-            //TryDate1.PrintDate();
+            TryDate1.PrintDate();
             //TryDate2.GetDate();
             //new TryType1().GetMyType();
             //ReflectionTest.ReflectMultipleTimes();
             //StringInterpTest.DoStringInterp();
             //TryStaticImport.CallStaticMethod();
             //TryGenericsClass1.TestGenericsClassMethod();
-            TryDict1.Dict1();
+            //TryDict1.Dict1();
         }
     }
 }
