@@ -37,7 +37,8 @@ namespace csharp_examples
             //TryStaticImport.CallStaticMethod();
             //TryGenericsClass1.TestGenericsClassMethod();
             //TryDict1.Dict1();
-            TryFuncParam1.FuncParam();
+            //TryFuncParam1.FuncParam();
+            TryReflectionMove.MoveViaReflection();
         }
     }
 }
