@@ -40,7 +40,8 @@ namespace csharp_examples
             //TryFuncParam1.FuncParam();
             //TryReflectionMove.MoveViaReflection();
             //GetAssemblyInfo.AssemblyInfo();
-            GetCustomBuildInfo.CustomBuildInfo();
+            //GetCustomBuildInfo.CustomBuildInfo();
+            TryRef1.TryRef();
         }
     }
 }
