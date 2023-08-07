@@ -42,7 +42,8 @@ namespace csharp_examples
             //GetAssemblyInfo.AssemblyInfo();
             //GetCustomBuildInfo.CustomBuildInfo();
             //TryRef1.TryRef();
-            TryCustomAttributes1.TryCustomAttributes();
+            //TryCustomAttributes1.TryCustomAttributes();
+            TryCustomAttributes2.TryCustomAttributes();
         }
     }
 }
