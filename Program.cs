@@ -38,12 +38,12 @@ namespace csharp_examples
             //TryGenericsClass1.TestGenericsClassMethod();
             //TryDict1.Dict1();
             //TryFuncParam1.FuncParam();
-            //TryReflectionMove.MoveViaReflection();
+            TryReflectionMove.MoveViaReflection();
             //GetAssemblyInfo.AssemblyInfo();
             //GetCustomBuildInfo.CustomBuildInfo();
             //TryRef1.TryRef();
             //TryCustomAttributes1.TryCustomAttributes();
-            TryCustomAttributes2.TryCustomAttributes();
+            //TryCustomAttributes2.TryCustomAttributes();
         }
     }
 }

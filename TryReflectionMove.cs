@@ -19,10 +19,12 @@ namespace csharp_examples
             {
                 string aPropName = prop.Name;
                 PropertyInfo bProp = bType.GetProperty(aPropName);
+                bool isStatic = prop.GetAccessors(nonPublic: true)[0].IsStatic;
 
-                if (bProp != null)
+                if (bProp != null && !isStatic)
                 {
                     object aPropValue = prop.GetValue(aObject);
+                    Console.WriteLine("Moving property " + aPropName);
                     bProp.SetValue(bObject, aPropValue);
                 }
 
@@ -41,17 +43,19 @@ namespace csharp_examples
         public string StrField { get; set; }
         public long LongField { get; set; }
         public double DoubleField { get; set; }
+        public static string StaticStr { get; set; }
 
         public AObject(string strField, long longField, double doubleField)
         {
             StrField = strField;
             LongField = longField;
             DoubleField = doubleField;
+            StaticStr = "hello";
         }
 
         public override string ToString()
         {
-            return StrField + " " + LongField + " " + DoubleField;
+            return StrField + " " + LongField + " " + DoubleField + " " + StaticStr;
         }
     }
 
@@ -60,6 +64,7 @@ namespace csharp_examples
         public string StrField { get; set; }
         public long LongField { get; set; }
         public double DoubleField { get; set; }
+        public static string StaticStr { get; set; }
 
         public BObject(string strField, long longField, double doubleField)
         {
@@ -70,7 +75,7 @@ namespace csharp_examples
 
         public override string ToString()
         {
-            return StrField + " " + LongField + " " + DoubleField;
+            return StrField + " " + LongField + " " + DoubleField  + " " + StaticStr;
         }        
     }
 
