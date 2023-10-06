@@ -45,7 +45,8 @@ namespace csharp_examples
             //TryCustomAttributes1.TryCustomAttributes();
             //TryCustomAttributes2.TryCustomAttributes();
             //TryDateTimeParse.DateTimeParse();
-            TryRefParamTypeViaReflection.GetRefParamType();
+            //TryRefParamTypeViaReflection.GetRefParamType();
+            TryReflection1.Reflection1();
         }
     }
 }
