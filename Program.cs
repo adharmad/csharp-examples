@@ -48,7 +48,9 @@ namespace csharp_examples
             //TryRefParamTypeViaReflection.GetRefParamType();
             //TryReflection1.Reflection1();
             //TryLinq1.sortUsingLinq();
-            TryLinq2.sortUsingLinq2();
+            //TryLinq2.sortUsingLinq2();
+            //TryRef2.TryRef();
+            PassPropertyByRef.PropertyByRef();
         }
     }
 }
